@@ -36,4 +36,6 @@ export class AssociateService {
   getURLById(id: number): string {
     return `${this.getURL()}/${id}`
   }
+
+  function() {}
 }
