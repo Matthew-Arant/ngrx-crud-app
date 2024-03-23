@@ -30,7 +30,7 @@ export class AssociateService {
   }
 
   getURL(): string {
-    return 'http://localhost:3000/associate'
+    return 'https://ngrx-members-api.vercel.app/associates'
   }
 
   getURLById(id: number): string {
