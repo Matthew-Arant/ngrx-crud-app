@@ -5,7 +5,7 @@ import { AddassociateComponent } from '../addassociate/addassociate.component';
 import { Store } from '@ngrx/store';
 import { Associate } from 'src/app/Store/Model/associate.model';
 import { getAssociateList } from 'src/app/Store/Associate/Associate.Selector';
-import { loadAssociate } from 'src/app/Store/Associate/Associate.Action';
+import { deleteAssociate, getAssociate, loadAssociate, openPopup } from 'src/app/Store/Associate/Associate.Action';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -36,7 +36,6 @@ export class AssociatelistingComponent implements OnInit {
       this.datasource = new MatTableDataSource<Associate>(this.AssociateList)
       this.datasource.paginator = this.paginator;
       this.datasource.sort = this.sort;
-      console.log(this.datasource.data)
     })
   }
 
@@ -44,7 +43,19 @@ export class AssociatelistingComponent implements OnInit {
     this.openPopup(0, 'Create Associate')
   }
 
+  functionEdit(code: number) {
+    this.openPopup(code, 'Edit Associate')
+    this.store.dispatch(getAssociate({ id:code }))
+  }
+
+  functionDelete(code: number) {
+    if(confirm('Do you want to delete associate?')) {
+      this.store.dispatch(deleteAssociate({ code: code }))
+    }
+  }
+
   openPopup(code: number, title: string) {
+    this.store.dispatch(openPopup())
     this.dialog.open(AddassociateComponent, {
       width: '50%',
       data: {

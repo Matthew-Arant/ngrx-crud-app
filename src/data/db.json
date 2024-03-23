@@ -1,64 +1,24 @@
 {
-    "associate":[
-        {
-            "id": 1,
-            "name": "Battew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        },
-        {
-            "id": 2,
-            "name": "Cattew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        },
-        {
-            "id": 3,
-            "name": "Attew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        },
-        {
-            "id": 4,
-            "name": "Mattew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        },
-        {
-            "id": 5,
-            "name": "Zattew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        },
-        {
-            "id": 1,
-            "name": "Mattew",
-            "email": "matthew@matthew.com",
-            "phone": "419",
-            "address": "12",
-            "type": "CUSTOMER",
-            "associategroup": "level1",
-            "status": true
-        }
-    ]
+  "associate": [
+    {
+      "id": 4,
+      "name": "Mattew",
+      "email": "matthew@matthew.com",
+      "phone": "419",
+      "address": "12",
+      "type": "CUSTOMER",
+      "associategroup": "level1",
+      "status": true
+    },
+    {
+      "id": 9,
+      "name": "Gabe Jenkins",
+      "email": "gabe@gmail.com",
+      "phone": "704",
+      "associategroup": "level3",
+      "address": "LA",
+      "type": "supplier",
+      "status": true
+    }
+  ]
 }

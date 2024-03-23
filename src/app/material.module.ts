@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
         MatPaginatorModule,
         MatSortModule,
         ReactiveFormsModule,
+        MatSnackBarModule,
     ]
 })
 

@@ -6,3 +6,7 @@ const getAssociateState = createFeatureSelector<AssociateModel>('associate')
 export const getAssociateList = createSelector(getAssociateState, (state) => {
     return state.list;
 })
+
+export const getAssociate = createSelector(getAssociateState, (state) => {
+    return state.associateobject;
+})

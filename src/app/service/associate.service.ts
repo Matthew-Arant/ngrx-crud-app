@@ -25,6 +25,10 @@ export class AssociateService {
     return this.http.post(this.getURL(), data)
   }
 
+  retrieve(id: number) {
+    return this.http.get<Associate>(this.getURLById(id))
+  }
+
   getURL(): string {
     return 'http://localhost:3000/associate'
   }
