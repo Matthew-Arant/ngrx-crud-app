@@ -1,3 +1,5 @@
+This was my first full-feature CRUD app using NGRX combined with a JSON server. There are some minor bugs that I could work out. I am capable of styling for mobile and will do so for this project in the future.
+
 # BlogApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
