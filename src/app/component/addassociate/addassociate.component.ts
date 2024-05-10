@@ -76,9 +76,9 @@ saveAssociate() {
 
     }
     if(obj.id === 0) {
-      return this.store.dispatch(addAssociate({ inputData: obj }))
+      this.store.dispatch(addAssociate({ inputData: obj }))
     } else {
-      return this.store.dispatch(updateAssociate({ inputData: obj}))
+      this.store.dispatch(updateAssociate({ inputData: obj}))
     }
     this.closePopup();
   }

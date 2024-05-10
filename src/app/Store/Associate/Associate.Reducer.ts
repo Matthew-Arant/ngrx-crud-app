@@ -34,21 +34,21 @@ const AssociateReducer = createReducer(AssociateState,
             errormessage: ''
         }
     }),
-    on(addAssociateSuccess, (state, action) => {
-        return {
-            ...state,
-            associateobject: {
-                id: 0,
-                name: "",
-                email: "",
-                phone: "",
-                type: "CUSTOMER",
-                address: "",
-                associategroup: "level1",
-                status: true
-            }
-        }
-    }),
+    // on(addAssociateSuccess, (state, action) => {
+    //     return {
+    //         ...state,
+    //         associateobject: {
+    //             id: 0,
+    //             name: "",
+    //             email: "",
+    //             phone: "",
+    //             type: "CUSTOMER",
+    //             address: "",
+    //             associategroup: "level1",
+    //             status: true
+    //         }
+    //     }
+    // }),
     on(updateAssociateSuccess, (state, action) => {
         const newData = state.list.map(o => {
             return o.id === action.inputData.id ? action.inputData : o
