@@ -23,7 +23,7 @@ const AssociateReducer = createReducer(AssociateState,
         newData.id = maxID + 1;
         return {
             ...state,
-            list: [...state.list, newData],
+            associateobject: newData,
             errormessage: ''
         }
     }),
